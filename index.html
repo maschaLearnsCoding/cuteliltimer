@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cute Lil Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="window">
+  <div id="top-bar">
+    <img src="close.png" class="win-btn" id="closeBtn" alt="close">
+    <img src="minimize.png" class="win-btn" id="minimizeBtn" alt="minimize">
+    <img src="maximize.png" class="win-btn" id="maximizeBtn" alt="maximize">
+  </div>
+
+  <div id="scene">
+    <div id="timer-container">
+      <div id="timer">00:00</div>
+      <div id="session-text">Select a friend to start</div>
+    </div>
+
+    <div id="deer"></div> 
+    <div id="bird" class="hotspot" data-tooltip="Short break (5 min)"></div>
+    <div id="rabbit" class="hotspot" data-tooltip="Start Pomodoro (45 min)"></div>
+    <div id="rose" class="hotspot" data-tooltip="Custom Timer"></div>
+  </div>
+</div> <audio id="ding" src="ding.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
